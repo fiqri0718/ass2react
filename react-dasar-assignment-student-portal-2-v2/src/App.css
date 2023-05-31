@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+#top1 {
+    background-color: #f1f1f1;
+
+}
+
+#toptu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.user img {
+    width: 40px;
+    height: 40px;
+}
+
+#form {
+    background-color: #fff;
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 2rem;
+    display: contents;
+    gap: 2rem;
+}
+
+#form-student {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+#form-student label[for="input-name"],
+#form-student label[for="input-prody"],
+#form-student input[type="text"],
+#form-student select[id="input-prody"] {
+    grid-column: 1 / span 2;
+}
+
+#form-student label[for="input-prody"] {
+    grid-row: 5;
+}
+
+#form-student select[id="input-prody"] {
+    grid-row: 6;
+}
+
+#form-student label[for="input-date"],
+#form-student input[type="date"] {
+    grid-column: 1;
+}
+
+#form-student label[for="input-date"],
+#form-student label[for="input-gender"] {
+    grid-row: 3;
+}
+
+#form-student input[type="date"],
+#form-student select[id="input-gender"] {
+    grid-row: 4;
+}
+
+#form-student label[for="input-gender"],
+#form-student select[id="input-gender"] {
+    grid-column: 2;
+}
+
+#form-student label {
+    margin-bottom: 5px;
+}
+
+#form-student input,
+#form-student select {
+    padding: 10px;
+    margin-bottom: 10px;
+    /* border: none; */
+    border-radius: 5px;
+}
+
+#add-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    grid-row: 7;
+}
+
+#form-student input[type="submit"] {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+input,
+select {
+    border: 2px solid #000;
+}
+
+#table-student {
+    width: 100%;
+    border-collapse: collapse;
+    justify-content: flex;
+    margin-top: 20px;
+}
+
+#table-student th,
+#table-student td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#table-student th {
+    background-color: #f1f1f1;
+}
+
+#table-student td:last-child {
+    text-align: center;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
